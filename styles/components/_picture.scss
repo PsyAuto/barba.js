@@ -1,0 +1,28 @@
+.picture,
+[class*='picture--'] {
+  height: 40vh;
+  background-color: $c-gray-dark;
+  background-image: url('../images/picture-light.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 30%;
+  border-radius: .4rem;
+}
+
+[class*='--pink'] .picture,
+[class*='picture--'][class*='--pink'] {
+  background-color: $c-pink;
+  background-image: url('../images/picture-dark.png');
+}
+
+[class*='--blue'] .picture,
+[class*='picture--'][class*='--blue'] {
+  background-color: $c-blue;
+  background-image: url('../images/picture-dark.png');
+}
+
+[class*='--green'] .picture,
+[class*='picture--'][class*='--green'] {
+  background-color: $c-green;
+  background-image: url('../images/picture-dark.png');
+}

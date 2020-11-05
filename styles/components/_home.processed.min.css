@@ -1,0 +1,2 @@
+.home{position:absolute;width:calc(100% - 2rem);max-width:none;height:calc(100% - 2rem);display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center;font-size:1.25em;text-align:center}.home__title{margin:-.25em 0 0;font-size:4em}.home__subtitle{margin:0 0 2em;color:$c-gray-medium}.home__link{color:$c-blue;text-decoration:none}
+/*# sourceMappingURL=_home.processed.min.css.map */

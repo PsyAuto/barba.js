@@ -1,0 +1,37 @@
+.intro {
+  width: 100%;
+  max-width: none;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $c-black;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.intro__title,
+.intro__subtitle,
+.intro__link {
+  will-change: transform, opacity;
+}
+
+.intro__title {
+  margin: -.25em 0 0;
+  font-size: 4em;
+}
+
+.intro__subtitle {
+  margin: 0 0 2em;
+  color: $c-gray-medium;
+}
+
+.intro__link {
+  color: $c-blue;
+  text-decoration: none;
+  
+  &:hover {
+    color: $c-green;
+  }
+}

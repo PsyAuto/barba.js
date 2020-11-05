@@ -1,0 +1,19 @@
+.colophon {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $c-blue;
+  color: $c-white;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    background-color .35s ease-in-out,
+    color .35s ease-in-out;
+  
+  &:hover {
+    background-color: $c-white;
+    color: $c-blue;
+  }
+}

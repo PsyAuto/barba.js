@@ -1,0 +1,247 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: 'BLOKK';
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12747/BLOKKNeue-Regular.otf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Redacted';
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12747/redacted-regular.woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+html {
+  font-size: calc(1em * .625);
+}
+
+body {
+  font: 1vw/2 "Space Mono", monospace;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.text {
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+html {
+  overflow: hidden;
+}
+
+html.js {
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+}
+
+html.js.wf-active, html.js.wf-inactive, html.js.ready {
+  opacity: 1;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+body > svg {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin: 2em 0;
+}
+
+.colophon {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #3665EA;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .35s ease-in-out, color .35s ease-in-out;
+}
+
+.colophon:hover {
+  background-color: #fff;
+  color: #3665EA;
+}
+
+.site,
+[class*='site--'] {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home .site, .home
+[class*='site--'] {
+  height: 200vh;
+}
+
+[class*='site--'][class*='--pink'] {
+  color: #EC43DD;
+  background-color: rgba(236, 67, 221, 0.3);
+}
+
+[class*='site--'][class*='--blue'] {
+  color: #3665EA;
+  background-color: rgba(54, 101, 234, 0.3);
+}
+
+[class*='site--'][class*='--green'] {
+  color: #60F6A8;
+  background-color: rgba(96, 246, 168, 0.3);
+}
+
+.site__header,
+.site__main {
+  padding: 1rem;
+}
+
+.picture,
+[class*='picture--'] {
+  height: 40vh;
+  background-color: #394042;
+  background-image: url("../images/picture-light.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 30%;
+  border-radius: .4rem;
+}
+
+[class*='--pink'] .picture,
+[class*='picture--'][class*='--pink'] {
+  background-color: #EC43DD;
+  background-image: url("../images/picture-dark.png");
+}
+
+[class*='--blue'] .picture,
+[class*='picture--'][class*='--blue'] {
+  background-color: #3665EA;
+  background-image: url("../images/picture-dark.png");
+}
+
+[class*='--green'] .picture,
+[class*='picture--'][class*='--green'] {
+  background-color: #60F6A8;
+  background-image: url("../images/picture-dark.png");
+}
+
+.main {
+  width: 70%;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.intro {
+  width: 100%;
+  max-width: none;
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #000;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.intro__title,
+.intro__subtitle,
+.intro__link {
+  will-change: transform, opacity;
+}
+
+.intro__title {
+  margin: -.25em 0 0;
+  font-size: 4em;
+}
+
+.intro__subtitle {
+  margin: 0 0 2em;
+  color: #4d5355;
+}
+
+.intro__link {
+  color: #3665EA;
+  text-decoration: none;
+}
+
+.intro__link:hover {
+  color: #60F6A8;
+}
+
+.shape-outer {
+  position: relative;
+  z-index: 10;
+  margin-top: -.5rem;
+  pointer-events: none;
+}
+
+.shape {
+  height: 100vh;
+  width: 100%;
+  display: block;
+  transform-origin: 50% 0;
+  fill: #EC43DD;
+  fill: #000;
+  will-change: transform;
+}
+
+.back {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.back:hover {
+  color: #3665EA;
+}
+
+.link {
+  transition: color .35s ease-in-out;
+}
+
+[data-barba='wrapper'] {
+  position: relative;
+}
+
+[data-barba='container'] {
+  will-change: transform;
+}
+
+.is-animating > [data-barba='container'] {
+  position: absolute;
+  width: 100%;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Barba - once + router + SVG morph</title>
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+  <link href="styles/main.processed.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://unpkg.com/@barba/router"></script>
+</head>
+<body class="{{ body_class }}">
+  {% include "./svg/sprite.svg" %}
+  <div data-barba="wrapper" data-barba-namespace="{{ ns }}">
+    <div data-barba="container">
+      <div class="{{ site_class }}">
+        {% block content %}
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+  {% include "./template-parts/_colophon.njk" %}
+  <script src="scripts/main.processed.js"></script>
+</body>
+</html>

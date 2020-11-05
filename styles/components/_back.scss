@@ -1,0 +1,11 @@
+.back {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: $c-white;
+  text-decoration: none;
+  
+  &:hover {
+    color: $c-blue;
+  }
+}

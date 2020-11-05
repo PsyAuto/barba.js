@@ -1,0 +1,30 @@
+.site,
+[class*='site--'] {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  
+  .home & {
+    height: 200vh;
+  }
+}
+
+[class*='site--'][class*='--pink'] {
+  color: $c-pink;
+  background-color: fade-out($c-pink, .7);
+}
+
+[class*='site--'][class*='--blue'] {
+  color: $c-blue;
+  background-color: fade-out($c-blue, .7);
+}
+
+[class*='site--'][class*='--green'] {
+  color: $c-green;
+  background-color: fade-out($c-green, .7);
+}
+
+.site__header,
+.site__main {
+  padding: 1rem;
+}

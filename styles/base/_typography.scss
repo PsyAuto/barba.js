@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'BLOKK';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/12747/BLOKKNeue-Regular.otf');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Redacted';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/12747/redacted-regular.woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+html {
+  font-size: calc(1em * .625);
+}
+
+body {
+  font: 1vw / 2 $ff-default;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.text {
+  font-family: $ff-default;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
