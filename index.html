@@ -7,13 +7,55 @@
   <title>Barba - once + router + SVG morph</title>
   <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
   <link href="styles/main.processed.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
   <script src="https://unpkg.com/@barba/core"></script>
   <script src="https://unpkg.com/@barba/router"></script>
+  <script
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.11/jquery.knob.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/jplayer/jquery.jplayer.min.js" integrity="sha512-g0etrk7svX8WYBp+ZDIqeenmkxQSXjRDTr08ie37rVFc99iXFGxmD0/SCt3kZ6sDNmr8sR0ISHkSAc/M8rQBqg==" crossorigin="anonymous"></script>
+  <script src="scripts/jplayer.js"></script>
+  <link rel="shortcut icon" href="">
+  <link href="styles/jplayer.css" rel="stylesheet">
 </head>
 <body class="home">
   <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 16 16" id="icons-arrow-bottom" xmlns="http://www.w3.org/2000/svg"><path d="M8 7.996l4.828-4.828 2.414 2.414L8 12.832.758 5.582l2.414-2.414z" fill-rule="evenodd"/></symbol><symbol viewBox="0 0 16 16" id="icons-arrow-left" xmlns="http://www.w3.org/2000/svg"><path d="M8.957 8l4.828 4.828-2.414 2.414L4.121 8l7.25-7.242 2.414 2.414z" fill-rule="evenodd"/></symbol><symbol viewBox="0 0 16 16" id="icons-arrow-right" xmlns="http://www.w3.org/2000/svg"><path d="M7.996 8L3.168 3.172 5.582.758 12.832 8l-7.25 7.242-2.414-2.414z" fill-rule="evenodd"/></symbol><symbol viewBox="0 0 16 16" id="icons-arrow-top" xmlns="http://www.w3.org/2000/svg"><path d="M8 8.004l-4.828 4.828-2.414-2.414L8 3.168l7.242 7.25-2.414 2.414z" fill-rule="evenodd"/></symbol></svg>
   <div data-barba="wrapper" data-barba-namespace="home">
+
+<div class="media-thumb">
+  <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+  <div id="jp_container_1" class="jp-player-container" role="application" aria-label="media player">
+    <div class="jp-media-poster">
+      <img src="https://storage.googleapis.com/webdesignledger.pub.network/WDL/2015/05/18-creative-music-album-covers.jpg" />
+    </div>
+    <div class="jp-gui jp-interface">
+      <div class="jp-backdrop"></div>
+      
+        <div class="jp-controls-holder">
+          
+          <div class="player-time"> 
+            <span class="jp-current-time" role="timer" aria-label="time">&nbsp;</span> /
+            <span class="jp-duration" role="timer" aria-label="duration">&nbsp;</span>  
+          </div>
+          <div class="jp-controls">
+            <div class="jp-progress-holder">
+              <div class="jp-progress-dial"></div> 
+            </div>
+            <div class="jp-play" role="button" tabindex="0"><i class="fa fa-play"></i></div>
+            <div class="jp-pause" role="button" tabindex="0"><i class="fa fa-pause"></i></div>
+          </div>
+          <div class="jp-progress">
+            <div class="jp-seek-bar">
+              <div class="jp-play-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div> 
+</div>
+  
     <div data-barba="container">
       <div class="site">
         
