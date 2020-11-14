@@ -1,0 +1,109 @@
+@charset "UTF-8";
+.media-thumb {
+  height: 162px;
+  width: 162px;
+  background: #000;
+}
+
+.jp-player-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.jp-player-container .jp-media-poster {
+  height: 100%;
+  width: 100%;
+  float: left;
+  z-index: -1;
+}
+.jp-player-container .jp-media-poster img {
+  height: 100%;
+  width: 100%;
+}
+.jp-player-container .jp-gui {
+  color: #FFF;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.jp-player-container .jp-gui .jp-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.05s linear;
+}
+.jp-player-container .jp-gui .jp-backdrop:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr="#4D000000", endColorstr="#FC000000");
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…pZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
+  background-size: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.99) 100%);
+}
+.jp-player-container .jp-gui .jp-controls-holder {
+  position: relative;
+  height: 100%;
+}
+.jp-player-container .jp-gui .jp-progress-holder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.05s linear;
+}
+.jp-player-container .jp-gui .player-time {
+  font-size: 11px;
+  position: absolute;
+  top: 20px;
+  text-align: center;
+  width: 100%;
+}
+.jp-player-container .jp-gui .player-time .jp-duration {
+  color: #CCC;
+}
+.jp-player-container .jp-gui .jp-controls {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.jp-player-container .jp-gui .jp-controls .jp-play {
+  left: 4px;
+  position: relative;
+}
+.jp-player-container .jp-gui .jp-controls .jp-play, .jp-player-container .jp-gui .jp-controls .jp-pause {
+  font-size: 30px;
+  cursor: pointer;
+  outline: none !important;
+  text-align: center;
+}
+.jp-player-container:hover .jp-progress-holder {
+  opacity: 1;
+}
+.jp-player-container:hover .jp-backdrop {
+  opacity: 1;
+}
+.jp-player-container:hover .jp-backdrop:after {
+  opacity: 1;
+}
+.jp-player-container.jp-state-playing .jp-gui .jp-backdrop {
+  opacity: 1;
+}
